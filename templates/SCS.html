@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/Algo.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="static/images/logo.jpg" alt="">
+    </div>
+
+    <div class="navbar">
+        <a href="/">HOME</a>
+    </div>
+     
+    <div style="padding-bottom:40px;"></div>
+      
+     
+     <form action="/SCS" method="POST">
+        <h1 style=" font-family: 'Comfortaa', cursive; font-size: 25px;"> 
+            Shortest Common Supersequence (SCS):
+        </h1>
+        <p style="font-family: 'Varela Round', sans-serif; font-size: 19px;">
+            The shortest common supersequence of two sequences X and Y is 
+            the shortest sequence which has X and Y as subsequences.
+        </p>
+        <div class="input-container">
+            <center><i  style="font-size:15px;"></i>
+            Choose Input File <select name="input" >
+            <option>input1.txt</option>
+            <option>input2.txt</option>
+            <option>input3.txt</option>
+            <option>input4.txt</option>
+            <option>input5.txt</option>
+            <option>input6.txt</option>
+            <option>input7.txt</option>
+            <option>input8.txt</option>
+            <option>input9.txt</option>
+            <option>input10.txt</option>
+        </select></p></center>
+        </div>
+
+        
+        <center><button class="btn" type="submit" name="request" style="width:140px; ">RUN</button></center>  
+     </form>
+    
+     <div style="padding-top: 30px;"></div>
+
+     {% if length != None %}
+     <form action="" style=" border-radius: 5px;">
+        <center><h1 style=" font-family: 'Comfortaa', cursive; font-size: 20xpx;">Output</h1></center>
+        <p style="font-family: 'Varela Round', sans-serif; font-size: 19px;">Length of SCS is: {{length}}</p>
+     </form>
+     
+     {% endif %}
+
+
+
+    <div class="header" style="left: 0;bottom: 0;width:100%; margin-top:30px; padding-top:0px; font-size:17px; font-family: 'Varela Round', sans-serif;">
+        <footer style="text-align: left;">&copy; Copyright 2020 <span style="color:#bbe1fa;font-size:18px; font-family: 'Varela Round', sans-serif;">Algorithm Project</span>
+            <span style="padding-left: 950px;">
+
+                <a href="#">
+                    <i style="color: #bbe1fa; font-size:20px;" class="fa fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i style="color: #bbe1fa; font-size:20px;" class="fa fa-linkedin"></i>
+                </a>
+
+                <a href="#">
+                    <i style="color: #bbe1fa; font-size:20px" class="fa fa-facebook"></i>
+                </a>
+
+                <a href="#">
+                    <i style="color: #bbe1fa; font-size:20px" class="fa fa-medium"></i>
+                </a>
+
+            </span>
+        </footer>
+
+    </div>
+    </div>
+
+
+</body>
+
+</html>
