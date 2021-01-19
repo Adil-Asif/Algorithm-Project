@@ -230,7 +230,7 @@ def PP_page():
                  length = True
              else:
                   length = False 
-             print(length)   
+             #print(length)   
      return render_template('/Partition_Problem.html',length=length)
 
 
@@ -343,6 +343,7 @@ def WBP_page():
          if f.mode == 'r':
              for i in f:
                   count = count + 1
+                  #print(i)
              f.close()
          
          f=open(filename,"r")
